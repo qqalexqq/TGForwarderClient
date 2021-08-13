@@ -1,5 +1,7 @@
 ## TGForwarderClient - forward messages from channels to chats in Telegram
 
+### Tutorial
+
 1. Visit [Telegram Apps API](https://my.telegram.org/apps) and login with your Telegram Account.
 2. Fill out the form to register a new Telegram application.
 3. After registration you get an API key. It consists of two parts: `api_id` and `api_hash` - set those as env variables to `$API_ID` and `$API_HASH` (you can save them for persistence to `.env` file).
@@ -23,4 +25,18 @@ abcdefghijklmnopqrstuvwxyz (ver long string)
 ```
 docker-compose build
 docker-compose up -d
+```
+
+### Usage
+
+with docker...
+
+```shell
+docker run ghcr.io/qqalexqq/tgforwarderclient --help
+```
+
+... or as python module
+
+```shell
+python3 -m tgforwarderclient --help
 ```
